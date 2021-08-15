@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "fantasy-land": "^5.0.0",
+    "sanctuary": "^3.1.0",
+    "sanctuary-useless": "^2.0.1"
+  }
+}
