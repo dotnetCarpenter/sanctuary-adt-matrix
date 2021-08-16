@@ -2,7 +2,9 @@
   "version": "1.0.1",
   "name": "sanctuary-adt-matrix",
   "description": "Matrix that shows which Sanctuary ADT's implements which Type Classes",
-  "keywords": ["sanctuary"],
+  "keywords": [
+    "sanctuary"
+  ],
   "license": "MIT",
   "bin": "./cli.js",
   "main": "./index.js",
@@ -12,6 +14,7 @@
   },
   "dependencies": {
     "fluture": "^14.0.0",
-    "sanctuary": "^3.1.0"
+    "sanctuary": "^3.1.0",
+    "sanctuary-type-classes": "^12.1.0"
   }
 }
