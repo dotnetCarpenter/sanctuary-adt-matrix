@@ -1,5 +1,8 @@
 # Sanctuary ADT Matrix
 
+[![npm](https://img.shields.io/npm/v/sanctuary-adt-matrix.svg)](https://www.npmjs.com/package/sanctuary-adt-matrix)
+
+
 Usage:
 
 ```
