@@ -1,6 +1,6 @@
 'use strict'
 
-const S = require ('sanctuary')
+const S = require ('sanctuary');
 
 /****************************************
  * Paddings are manually set in the view.
@@ -18,9 +18,7 @@ const sillyLength = s => s.length;
 /*--------------- View */
 const pipeJoin = S.joinWith (' | ');
 
-const mapSillyHead = S.unchecked.map (sillyHead)
-
-const header = S.compose (pipeJoin) (mapSillyHead);
+const header = S.compose (pipeJoin) (S.unchecked.map (sillyHead));
 
 const headerAlignment = S.unchecked.pipe ([
   S.unchecked.map (S.compose (sillyLength) (sillyHead)),
