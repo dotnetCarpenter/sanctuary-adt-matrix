@@ -85,7 +85,7 @@ _The padding is `[13, 3, 4, 5, 5]`._
 
 ```js
 [
-  13, // = longest Class Type word
+  13, // = longest Type Class word
   3,  // = padding for Pair column
   4,  // = padding for Maybe column
   5,  // = padding for Either column
