@@ -2,6 +2,13 @@
 
 const S = require ('sanctuary')
 
+/****************************************
+ * Paddings are manually set in the view.
+ *
+ * With the current layout, you can not
+ * just set padding = length of String,
+ ****************************************/
+
 /*--------------- General functions */
 const sillyHead = ([name]) => name;
 
@@ -11,7 +18,9 @@ const sillyLength = s => s.length;
 /*--------------- View */
 const pipeJoin = S.joinWith (' | ');
 
-const header = S.compose (pipeJoin) (S.unchecked.map (sillyHead));
+const mapSillyHead = S.unchecked.map (sillyHead)
+
+const header = S.compose (pipeJoin) (mapSillyHead);
 
 const headerAlignment = S.unchecked.pipe ([
   S.unchecked.map (S.compose (sillyLength) (sillyHead)),
@@ -29,7 +38,7 @@ const row = padding =>
 const view = adts => typeClassTests =>
 `
 |  Type Class   | ${header (adts)} |
-| ------------  | ${headerAlignment (adts)} |
+| ------------- | ${headerAlignment (adts)} |
 ${S.joinWith ('\n')
              (S.map (r => `| ${r} |`)
                     (row ([13, 3, 4, 5, 5]) (S.map (test => test (adts))

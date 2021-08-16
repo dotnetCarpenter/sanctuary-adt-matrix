@@ -43,4 +43,5 @@ const getAdtTypeClassSupport = adt => S.pipe ([
 module.exports = {
   adts,
   typeClassTests,
+  trace,
 };
