@@ -1,4 +1,7 @@
 {
+  "name": "sanctuary-adt-matrix",
+  "version": "1.0.0",
+  "bin": "./cli.js",
   "dependencies": {
     "sanctuary": "^3.1.0",
     "sanctuary-useless": "^2.0.1"
