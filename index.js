@@ -31,7 +31,7 @@ const getTypeClassSupportForAdts = typeClass => S.unchecked.pipe ([
   S.prepend (typeClass)
 ]);
 
-// typeClassTests :: Array (Adt -> Array (String))
+// typeClassTests :: Array (Array (String Adt) -> Array (String))
 const typeClassTests = S.map (getTypeClassSupportForAdts) (typeClasses);
 
 // Unused

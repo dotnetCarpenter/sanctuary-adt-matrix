@@ -36,7 +36,7 @@ $ npx sanctuary-adt-matrix
 
 ## Using the matrix API
 
-Test [Sanctuary](https://sanctuary.js.org/) <acronym title="Algebraic Data Type">ADT's</acronym> for [Type Class](https://github.com/sanctuary-js/sanctuary-type-classes/tree/v12.1.0#sanctuary-type-classes) support.
+Test [Sanctuary's](https://sanctuary.js.org/) Algebraic Data Types (ADT) for [Type Class](https://github.com/sanctuary-js/sanctuary-type-classes/tree/v12.1.0#sanctuary-type-classes) support.
 
 ```js
 const { adts, typeClassTests } = require ('sanctuary-adt-matrix');
@@ -49,6 +49,6 @@ const { adts, typeClassTests } = require ('sanctuary-adt-matrix');
   ['Future', Adt]
 ]
 
-// typeClassTests :: Array (Adt -> Array (String))
+// typeClassTests :: Array (Array (String Adt) -> Array (String))
 typeClassTests [0] (adts) // -> [ 'Setoid', '✅', '✅', '✅', '❌' ]
 ```
