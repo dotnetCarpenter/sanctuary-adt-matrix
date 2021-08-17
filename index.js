@@ -20,6 +20,7 @@ const adts = [
   ['Array'  , []],
   ['Boolean', true],
   ['Date'   , new Date],
+  ['Function', S.I],
   ['Map'    , new Map],
   ['Number' , 42],
   ['Object' , {}],
