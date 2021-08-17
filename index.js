@@ -13,10 +13,18 @@ const isTypeClass = x => x['@@type'] === 'sanctuary-type-classes/TypeClass@1';
 
 /*--------------- Model */
 const adts = [
-  ['Pair'  , S.Pair ('') ('')],
-  ['Maybe' , S.Just ('')],
-  ['Either', S.Right ('')],
-  ['Future', Future (reject => resolve => () => {})]
+  ['Either' , S.Right ('')],
+  ['Maybe'  , S.Just ('')],
+  ['Pair'   , S.Pair ('') ('')],
+  ['Future' , Future (reject => resolve => () => {})],
+  ['Array'  , []],
+  ['Boolean', true],
+  ['Date'   , new Date],
+  ['Map'    , new Map],
+  ['Number' , 42],
+  ['Object' , {}],
+  ['RegExp' , /./],
+  ['String' , 'String'],
 ];
 
 const SUPPORTED = '\u2705';

@@ -39,8 +39,8 @@ const view = adts => typeClassTests =>
 | ------------- | ${headerAlignment (adts)} |
 ${S.joinWith ('\n')
              (S.map (r => `| ${r} |`)
-                    (row ([13, 3, 4, 5, 5]) (S.map (test => test (adts))
-                                                   (typeClassTests))))}
+                    (row ([13, 5, 4, 3, 5, 4, 6, 3, 2, 5, 5, 5, 5,]) (S.map (test => test (adts))
+                                                     (typeClassTests))))}
 `;
 
 module.exports = view
